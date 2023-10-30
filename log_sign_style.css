@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@200;300;400;500;600;700&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+.log-sign-body-contain{
+    background-image: linear-gradient(rgb(66, 66, 187), rgb(39, 39, 84));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    padding: 0 10px;
+}
+
+/* log-sign-body-contain::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+
+} */
+
+
+.log-sign-container{
+    background-image: linear-gradient(rgb(217 140 217), rgb(90 156 185));
+    width: 500px;
+    height: 530px;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.login_container{
+    width: 400px;
+    height: 350px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form h2{
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.input-field{
+    position: relative;
+    border-bottom: 2px solid white;
+    margin: 15px 0;
+}
+
+.input-field label{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-70%);
+    color: white;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.15s ease;
+}
+
+.input-field input:focus ~ label,
+.input-field input:valid ~ label{
+    color: #230c7d;
+    font-weight: 600;
+}
+
+.input-field input{
+    width: 100%;
+    height: 35px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    color: white;
+}
+
+.input-field input:focus ~ label,
+.input-field input:valid ~ label{
+    transform: translateY(-70%);
+    font-size: 10px;
+    top: 7px;
+}
+
+
+.btn-sign {
+    background: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    border: 2px solid transparent;
+    transition: 0.3s ease;
+}
+
+.btn-sign:hover{
+    /* color: #230c7d; */
+    border-color: white; 
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.btn-sign a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    width: auto;
+
+}
+
+.btn-sign a:hover{
+    color: #230c7d;
+}
+
+.login{
+    margin-top: 15px;
+}
+
+.login a{
+    text-align: center;
+    margin-top: 30px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .login a:hover{
+    color: #230c7d;
+  }
